@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    div.container { text-align: center;
+    margin-left: 200px; 
+    margin-right: 100px;
+}
+    ul.myul { display: inline-block; text-align: left;
+        margin-left: 30px; 
+    }
+    li{
+        padding-top: 7px;
+        font-size: 20px;
+    }
+    #button1{
+        float: left;
+        margin-left: -120px;
+        position: absolute;
+        border-color: black;
+        border-radius: 8px;
+        background-color: blanchedalmond;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    #button2{
+        float: right;
+        margin-right: 430px;
+        position: absolute;
+        border-color: black;
+        border-radius: 8px;
+        background-color: blanchedalmond;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+    }
+    #input1{
+        border-radius: 60px;
+        padding-left: 8px;
+        padding-right: 8px;
+        font-size: 25px;
+        border-color: black;
+        border-width: 5px;
+    }
+    body{
+        background-image: url('https://videohive.img.customer.envatousercontent.com/files/6d7eba0e-da85-4c18-bd3b-4bd090701be0/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=5099ee1083e59ca71374bc1d2e640ec9');
+        background-size: 100%;
+    }
+</style>
+</head>
+<body>
+    <center>
+    <form action="" method="POST">
+        <img src="https://th.bing.com/th/id/OIP.OrXPXyPdxUCk3ZLIJVJ16gHaHq?pid=ImgDet&rs=1" height="150" width="150"><br>
+        <input type="text" name="note" placeholder="Enter a note" id = 'input1' style="background-color:antiquewhite;">
+        <br><br>
+        <button id="button1" type="submit">Add Note</button>
+    </form>
+    <form action="" method="GET">
+        <button id="button2" type="submit" name ='refresh'>Refresh</button>
+        
+    </form>
+    </center>
+    <br><br>
+    {% block notes %}
+    {% endblock %}
+    </body>
+    <center>
+        <img src="https://editor.analyticsvidhya.com/uploads/68835linear4.png" height="300" width="600"><br>
+    </center>
+</body>
+</html>
